@@ -9,19 +9,23 @@
 </head>
 <body class="font-kumbh">
 
-    <header class="hidden">
-        <div class="shadow bg-slate-100">
+    <header class="">
+        <div class="h-16 px-5 z-50 bg-white flex items-center justify-between">
+            <span></span>
+            <button class="mobileHumber text-slate-600 w-10 h-10 rounded-md bg-slate-100"><i class="fa fa-bars"></i></button>
+        </div>
+        <div class="headerMenu hidden shadow bg-slate-100">
             <div class="container">
-                <div class="flex items-center justify-between h-24">
+                <div class="flex flex-col py-7 lg:py-0 lg:flex-row items-center justify-between lg:h-24">
                     <nav>
-                        <ul class="flex items-center justify-start gap-6">
+                        <ul class="flex flex-col lg:flex-row items-center justify-start gap-6">
                             <li><a href="#" class="font-medium text-lg text-slate-700" >Home</a></li>
                             <li><a href="#" class="font-medium text-lg text-slate-700" >Element</a></li>
                             <li><a href="#" class="font-medium text-lg text-slate-700" >Services</a></li>
                             <li><a href="#" class="font-medium text-lg text-slate-700" >Blogs</a></li>
                         </ul>
                     </nav>
-                    <ul class="flex items-center gap-5 justify-end">
+                    <ul class="flex pt-4 lg:pt-0 items-center gap-5 justify-end">
                         <li><a href="#" class="w-10 h-10 text-secondary hover:text-white flex items-center justify-center bg-white rounded-full before:w-10 before:h-10 before:rounded-full before:bg-primary before:scale-0 relative before:absolute before:top-0 before:left-0 hover:before:scale-100 before:transition-all duration-500 "><i class="z-10 fab fa-facebook-f"></i></a></li>
                         <li><a href="#" class="w-10 h-10 text-secondary hover:text-white flex items-center justify-center bg-white rounded-full before:w-10 before:h-10 before:rounded-full before:bg-primary before:scale-0 relative before:absolute before:top-0 before:left-0 hover:before:scale-100 before:transition-all duration-500 "><i class="z-10 fab fa-linkedin-in"></i></a></li>
                         <li><a href="#" class="w-10 h-10 text-secondary hover:text-white flex items-center justify-center bg-white rounded-full before:w-10 before:h-10 before:rounded-full before:bg-primary before:scale-0 relative before:absolute before:top-0 before:left-0 hover:before:scale-100 before:transition-all duration-500 "><i class="z-10 fab fa-instagram"></i></a></li>
@@ -213,14 +217,16 @@
         </div>
     </footer>
 
-    <div class="fixed bottom-4 right-5">
-        <span class="relative  flex h-10 w-10">
+    <div class="fixed lg:hidden bottom-5 right-5">
+        <span class="relative  flex h-12 w-12">
             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#0da85a] opacity-75"></span>
-            <a href="tel:01728068200" class="relative inline-flex rounded-full h-10 w-10 justify-center items-center bg-[#0da85a] text-white"><i class="fas fa-phone-alt"></i></a>
+            <a href="tel:01728068200" class="relative inline-flex rounded-full h-12 w-12 justify-center items-center bg-[#0da85a] text-white"><i class="fas fa-phone-alt"></i></a>
           </span>
     </div>
     
 
+    <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js"></script>
     
 </body>
 </html>
